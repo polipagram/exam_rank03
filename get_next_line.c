@@ -1,10 +1,6 @@
 #include "get_next_line.h"
-#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
-char *gnl(int fd)
+char *get_next_line(int fd)
 {
     static char buf[BUFFER_SIZE];
     static int n_read;
